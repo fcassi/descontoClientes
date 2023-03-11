@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja e Descontos</title>
+</head>
+<body>
+    <h1>Bem vindo à Loja!</h1>
+    <div id = "desconto"></div>
+    <script>
+        //-------------------Variáveis--------------
+        let cliente = Number(prompt("Olá favor nos dizer se você ja é cliente de nossa loja! \n 1 - Sim \n 2 - Não"))
+        let mensagem = ""
+        //------------------------------------------
+
+        if(cliente === 1){
+            mensagem = "Seu desconto é de 10%"
+        }else if(cliente === 2){
+            mensagem = "Seu desconto é de 5%"
+        }else{
+            mensagem = "Favor enviar um número válido"
+        }
+
+        document.getElementById("desconto").innerHTML = mensagem
+    </script>
+</body>
+</html>
